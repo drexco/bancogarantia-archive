@@ -1,57 +1,62 @@
+<!DOCTYPE html>
+  <html ng-app="nwa-merlin-login">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,600,700%7COpen+Sans:300,400,400italic,600,700">
         <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" id="css-main" href="/assets/css/oneui.css">
+        <link rel="stylesheet" id="css-main" href="assets/css/oneui.css">
         <!-- Page JS Plugins CSS -->
-        <link rel="stylesheet" href="/assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/select2/select2.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/select2/select2-bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.skinHTML5.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/dropzonejs/dropzone.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/select2/select2.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/select2/select2-bootstrap.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.skinHTML5.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/dropzonejs/dropzone.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.css">
 
         <!-- Page JS Plugins CSS -->
-        <link rel="stylesheet" href="/assets/js/plugins/slick/slick.min.css">
-        <link rel="stylesheet" href="/assets/js/plugins/slick/slick-theme.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/slick/slick-theme.min.css">
 
         <!-- Page JS Plugins CSS -->
-        <link rel="stylesheet" href="/assets/js/plugins/datatables/jquery.dataTables.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/datatables/jquery.dataTables.min.css">
 
         <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
         <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
         <!-- END Stylesheets -->
         <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
-        <script src="/assets/js/core/jquery.min.js"></script>
-        <script src="/assets/js/core/bootstrap.min.js"></script>
-        <script src="/assets/js/core/jquery.slimscroll.min.js"></script>
-        <script src="/assets/js/core/jquery.scrollLock.min.js"></script>
-        <script src="/assets/js/core/jquery.appear.min.js"></script>
-        <script src="/assets/js/core/jquery.countTo.min.js"></script>
-        <script src="/assets/js/core/jquery.placeholder.min.js"></script>
-        <script src="/assets/js/core/js.cookie.min.js"></script>
-        <script src="/assets/js/core/sitev4.js"></script>
-        <script src="/assets/js/app.js"></script>
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/core/bootstrap.min.js"></script>
+        <script src="assets/js/core/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/core/jquery.scrollLock.min.js"></script>
+        <script src="assets/js/core/jquery.appear.min.js"></script>
+        <script src="assets/js/core/jquery.countTo.min.js"></script>
+        <script src="assets/js/core/jquery.placeholder.min.js"></script>
+        <script src="assets/js/core/js.cookie.min.js"></script>
+        <script src="assets/js/core/sitev4.js"></script>
+        <script src="assets/js/app.js"></script>
 
         <!-- Page Plugins -->
-        <script src="/assets/js/plugins/chartjs/Chart.min.js"></script>
+        <script src="assets/js/plugins/chartjs/Chart.min.js"></script>
 
         <!-- Page JS Plugins -->
-        <script src="/assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-        <script src="/assets/js/plugins/bootstrap-datetimepicker/moment.min.js"></script>
-        <script src="/assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
-        <script src="/assets/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
-        <script src="/assets/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
-        <script src="/assets/js/plugins/select2/select2.full.min.js"></script>
-        <script src="/assets/js/plugins/masked-inputs/jquery.maskedinput.min.js"></script>
-        <script src="/assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.js"></script>
-        <script src="/assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
-        <script src="/assets/js/plugins/dropzonejs/dropzone.min.js"></script>
-        <script src="/assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.js"></script>
-        <script src="/assets/js/pages/base_pages_login.js"></script>
+        <script src="assets/js/plugins/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+        <script src="assets/js/plugins/bootstrap-datetimepicker/moment.min.js"></script>
+        <script src="assets/js/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker.min.js"></script>
+        <script src="assets/js/plugins/bootstrap-colorpicker/bootstrap-colorpicker.min.js"></script>
+        <script src="assets/js/plugins/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+        <script src="assets/js/plugins/select2/select2.full.min.js"></script>
+        <script src="assets/js/plugins/masked-inputs/jquery.maskedinput.min.js"></script>
+        <script src="assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.js"></script>
+        <script src="assets/js/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+        <script src="assets/js/plugins/dropzonejs/dropzone.min.js"></script>
+        <script src="assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.js"></script>
+        <script src="assets/js/pages/base_pages_login.js"></script>
+      </head>
 
-
+      <body>
         <!-- Login Content -->
         <div class="bg-white">
             <div class="content content-boxed overflow-hidden">
@@ -118,3 +123,17 @@
             </div>
         </div>
         <!-- END Login Content -->
+
+        <!-- Footer -->
+            <footer id="page-footer" class="content-mini content-mini-full font-s12 bg-gray-lighter clearfix">
+                <div align="center"><img src="/assets/img/logostrip.png" width="50%" alt=""/></div></div>
+                <div class="pull-right">
+                  <a href="/privacy-policy">Privacy Policy</a> &nbsp; &nbsp; <a href="/terms-and-conditions">Terms of Service</a> &nbsp; &nbsp; <a href="/anti-money-policy">Anti-Money Laundering</a></span>
+                </div>
+                <div class="pull-left">
+                    <a class="font-w600" href="http://goo.gl/6LF10W" target="_blank"> </a>{{date('Y')}}, &copy; Banco Garantia, A subsidiary of Credit Suisse AG.<span class="js-year-copy"></span>
+                </div>
+            </footer>
+            <!-- END Footer -->
+      </body>
+    </html>
