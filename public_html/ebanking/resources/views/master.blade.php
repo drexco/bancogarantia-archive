@@ -6,15 +6,15 @@
         <meta charset="utf-8">
         <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Piguet Galland : @yield('page_title')</title>
+        <title>Banco Garantia : @yield('page_title')</title>
         <meta name="description" content="stomise, well commented codes and seo friendly.">
-        <meta name="keywords" content="piguet, galland, banking, company, finance, money, loans">
+        <meta name="keywords" content="banco, garantia, banking, company, finance, money, loans">
         <meta name="author" content="AnDrexx">
 
         <!-- ==============================================
         Favicons
         =============================================== -->
-        <link rel="shortcut icon" type="image/x-icon" href="https://www.piguetgalland.ch/app/themes/piguet-galland/images/front/favicon.ico" />
+        <link rel="shortcut icon" href="/assets/img/logo10.png">
          <!-- Styles -->
         <link rel='stylesheet' id='et-googleFonts-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300i%2C400%2C600&amp;ver=4.8.1' type='text/css' media='all' />
         <!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"> -->        
@@ -41,7 +41,7 @@
             <!-- Page Sidebar -->
             <div class="page-sidebar">
                 <a class="logo-box" href="index.html">
-                    <span>PIGUET</span>
+                    <span>Garantia</span>
                     <i class="icon-radio_button_unchecked" id="fixed-sidebar-toggle-button"></i>
                     <i class="icon-close" id="sidebar-toggle-button-close"></i>
                 </a>
@@ -52,7 +52,7 @@
                                 @if(Session::get('account_type')=='admin')
                                      <li class="active-page">
                                         <a href="/">
-                                            <i class="menu-icon icon-home4"></i><span>Maison</span>
+                                            <i class="menu-icon icon-home4"></i><span>Home</span>
                                         </a>
                                     </li>
                                     <li>
@@ -132,7 +132,7 @@
                                 </li>
                                 <li>
                                     <a href="#">
-                                        <i class="menu-icon icon-phone"></i><span>Commentaires</span>
+                                        <i class="menu-icon icon-phone"></i><span>Customer Care</span>
                                     </a>
                                 </li>
                                 <li>
@@ -166,7 +166,7 @@
                             <div class="navbar-header">
                                 <div class="logo-sm">
                                     <a href="javascript:void(0)" id="sidebar-toggle-button"><i class="fa fa-bars"></i></a>
-                                    <a class="logo-box" href="index.html"><span>Piguet Galland</span></a>
+                                    <a class="logo-box" href="index.html"><span>Banco Garantia</span></a>
                                 </div>
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                     <i class="fa fa-angle-down"></i>
@@ -200,7 +200,7 @@
                     </nav>
                 </div><!-- /Page Header -->
                     <div class="page-footer">
-                        <p>2018, Piguet Galland & vous. <span>&copy;</span></p>
+                        <p>Banco Garantia, A subsidiary of Credit Suisse AG.<span>&copy;</span></p>
                     </div>
                 </div>
             </div><!-- /Page Content -->
@@ -225,7 +225,5 @@
         <script src="assets/plugins/datatables/js/jquery.datatables.min.js"></script>
         <script src="assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
         <script src="assets/js/pages/table-data.js"></script>
-
-
     </body>
 </html>
