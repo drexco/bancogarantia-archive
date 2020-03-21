@@ -86,6 +86,39 @@ class UserModel {
         return $data;
     }
 
+    //Check Balance
+    public static function checkBalance($user_id) 
+    {
+        $account_balance = DB::table('balance_accounts')
+                            ->where('user_id', Session::get('user_id'))
+                            ->select('account_balance')
+                            ->first();
+        return $account_balance;
+    }
+
+    //Funds Transfer
+    public static function fundsTransfer($user_id)
+    {
+        $old_balance = DB::table('trading_accounts')
+                            ->where('user_id', Session::get('user_id'))
+                            ->select('account_balance')
+                            ->first();
+
+        $new_balance = $old_balance + Input::get('amount_in_usd');
+
+        $update_data = array(
+                         'account_balance' => $new_balance,
+                         'transferred_on' => date('Y-m-d H:i:s'),
+                         'updated_on'=> date('Y-m-d H:i:s'),
+                        );
+
+       $update = DB::table('trading_accounts')
+                    ->where('id',$user_id)
+                    ->update($update_data);  
+
+        return $update_data;
+    }
+
     //Get User Data
     public static function getUserData($user_id)
     {
